@@ -1,4 +1,4 @@
-package Ex2_03_1;
+package J2_03_1;
 
 public class Player {
 
