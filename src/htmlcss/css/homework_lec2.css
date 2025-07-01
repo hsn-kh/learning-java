@@ -1,0 +1,43 @@
+body {
+    background-color: gray;
+}
+
+.register-form {
+    background-color: white;
+    width: 550px;
+    height: 300px;
+    margin: auto;
+}
+
+.register-form-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.register-form-item {
+    width: 506px;
+    display: block;
+    margin: auto auto 30px;
+}
+
+.register-form-item-small {
+    width: 240px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.register-form-input {
+    height: 30px;
+    border: 0.5px solid black;
+}
+
+.register-form-button {
+    width: 200px;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border: none;
+    margin-left: 20px;
+}

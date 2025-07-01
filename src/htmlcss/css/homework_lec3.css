@@ -1,0 +1,21 @@
+.company {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 600px;
+}
+
+.row {
+    height: 20px;
+}
+
+.cell {
+    font-size: 18px;
+    padding: 7px 12px;
+}
+
+.cell:first-child {
+    width: 30%;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}

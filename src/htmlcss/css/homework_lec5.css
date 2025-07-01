@@ -1,0 +1,13 @@
+.row {
+    width: 1000px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem auto;
+    padding: 0;
+}
+
+.item {
+    width: 300px;
+    height: 180px;
+}
