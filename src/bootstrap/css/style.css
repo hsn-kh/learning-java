@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+.navbar .nav-link {
+  font-size: 14px;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.navbar .nav-link.active {
+  border-bottom: #fff 2px solid;
+}
+
+@media screen and (max-width: 576px) {
+  .navbar .nav-link.active {
+    border-left: #fff 2px solid;
+    border-bottom: none;
+  }
+}
+
+.carousel-caption {
+  bottom: 3rem;
+}
+
+.carousel-item {
+  height: 32rem;
+}
+
+.carousel-item img {
+  height: 32rem;
+}
+
+#corp-desc {
+  background: url('https://source.unsplash.com/F-pSZO_jeE8/1600x800');
+  background-attachment: fixed;
+  text-align: center;
+  color: #fff;
+}
+
+ /* 色の候補： #3292a6 #2c5743 */
+#top-message img {
+  margin-top: -50px; }
+  
+#top-message .card:hover {
+  background: #69c099;
+  color: #fff; }
+
+#table-info tr:hover {
+  background-color: #69c099;
+  color: #fff; 
+}
+
+

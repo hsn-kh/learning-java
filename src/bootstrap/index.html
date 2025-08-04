@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- ファビコン -->
+    <link rel="icon" href="img/yossy.png">
+    <title>Yossy Inc.</title>
+</head>
+<body style="padding-top: 50px;">
+<!-- ページヘッダー -->
+<header id="page-header">
+    <!-- ナビゲーションバー -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+        <div class="container-fluid ms-5">
+            <a href="index.html" class="navbar-brand fst-italic">
+                <img src="img/yossy.png" alt="" width="40" height="30" class="d-inline-block align-text-top">
+                Yossy Inc.
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav ms-auto me-5">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">ホーム</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">会社情報</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">ブログ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">お問い合わせ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- メイン -->
+<main>
+    <!-- サービススライド -->
+    <section id="service-slide">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://picsum.photos/id/1/700/450" class="d-block w-100" alt="...">
+                    <div class="carousel-caption text-start">
+                        <h2 class="display-4 fw-bold fst-italic">AIロボット</h2>
+                        <p class="lead fst-italic">ここに1つ目のスライドの説明を記述します。</p>
+                        <a href="#" class="btn btn-primary btn-lg">Learn More</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://picsum.photos/id/2/700/450" class="d-block w-100" alt="...">
+                    <div class="carousel-caption">
+                        <h2 class="display-4 fw-bold fst-italic">VRシステム</h2>
+                        <p class="lead fst-italic">ここに２つ目のスライドの説明を記述します。</p>
+                        <a href="#" class="btn btn-danger btn-lg">Learn More</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://picsum.photos/id/3/700/450" class="d-block w-100" alt="...">
+                    <div class="carousel-caption text-end">
+                        <h2 class="display-4 fw-bold fst-italic">モバイルシステム</h2>
+                        <p class="lead fst-italic">ここに３つ目のスライドの説明を記述します。</p>
+                        <a href="#" class="btn btn-success btn-lg">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!--サービス一覧-->
+    <section id="service-list">
+        <div class="container py-5">
+            <div class="row">
+                <!-- サービス１ -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="https://picsum.photos/id/1/700/450" class="card-img-top img-fluid mb-3">
+                            <h2 class="card-title fst-italic">バイオインフォマティクス</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus
+                                eos accusamus sit earum. Animi, accusantium.</p>
+                            <a href="#" class="btn btn-outline-dark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="23" fill="currentColor"
+                                     class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                          d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- サービス２ -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="https://picsum.photos/id/2/700/450" class="card-img-top img-fluid mb-3">
+                            <h2 class="card-title fst-italic">自動運転AI開発</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus
+                                eos accusamus sit earum. Animi, accusantium.</p>
+                            <a href="#" class="btn btn-outline-dark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="23" fill="currentColor"
+                                     class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                          d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- サービス３ -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="https://picsum.photos/id/3/700/450" class="card-img-top img-fluid mb-3">
+                            <h2 class="card-title fst-italic">スペーステクノロジー</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus
+                                eos accusamus sit earum. Animi, accusantium.</p>
+                            <a href="#" class="btn btn-outline-dark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="23" fill="currentColor"
+                                     class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                          d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 企業説明 -->
+    <section id="corp-desc">
+        <div class="container p-5">
+            <div class="row">
+                <div class="col">
+                    <h1 class="fst-italic pt-5">テクノロジーの未来をサポートする企業<br>Yossy Inc.</h1>
+                    <p class="d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus quae
+                        commodi dolores, debitis sunt eos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ニュース -->
+    <section id="news-list">
+        <div class="container p-5">
+            <h2>News</h2>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://picsum.photos/id/1/190/200" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h3 class="card-title fs-5"><a href="#">ニュースタイトル１</a></h3>
+                                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        Cupiditate explicabo reprehenderit nobis atque ducimus iste, reiciendis ipsa!
+                                        Ea, laboriosam voluptates?</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="https://picsum.photos/id/2/190/200" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h3 class="card-title fs-5"><a href="#">ニュースタイトル２</a></h3>
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Cupiditate explicabo reprehenderit nobis atque ducimus iste, reiciendis
+                                            ipsa! Ea, laboriosam voluptates?</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="https://picsum.photos/id/3/190/200" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h3 class="card-title fs-5"><a href="#">ニュースタイトル３</a></h3>
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Cupiditate explicabo reprehenderit nobis atque ducimus iste, reiciendis
+                                            ipsa! Ea, laboriosam voluptates?</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- ページフッター -->
+<footer id="page-footer" class="bg-dark text-white text-center p-4">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p>Copyright @ 2023 Yossy Inc.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
