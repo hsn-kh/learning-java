@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fetch</title>
+  <style>
+    .w300{
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="image" class="w300"></div>
+  
+
+  <script>
+    const url = 'https://dog.ceo/api/breeds/image/random';
+    // 短期間集中アクセスはNG 1秒〜2秒は間隔を開けながら使うようにしてください
+
+    const options = {
+      method: 'GET'
+    };
+
+    const fetchTest1 = fetch(url, options);
+    console.log(fetchTest1);
+    // 返り値はPromise 
+    // この状態では中身が確認できない
+
+    // APIがJSONで取得できるなら response.json()でパースする
+    const fetchTest2 = fetch(url, options)
+    .then( response => response.json() );
+
+//    console.log(fetchTest2);
+    
+    console.log(fetchTest2.message);
+
+// データの取得をまってから処理をする
+// Promise, async/await
+
+function getDogImage(url, options){
+  return fetch(url, options)
+  .then( response => response.json());
+}
+
+async function getImage(url, options){
+  const response = await getDogImage(url, options);
+  //console.log(response.message);
+
+  const imageDiv = document.getElementById('image');
+  const imageElement = document.createElement('img');
+  imageElement.src = response.message;
+ // document.body.appendChild(imageElement);
+ imageDiv.appendChild(imageElement);
+}
+
+getImage(url, options);
+
+
+
+  </script>
+</body>
+</html>

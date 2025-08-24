@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "sourceRoot": "",
+  "sources": [
+    "_tab.scss"
+  ],
+  "names": [],
+  "mappings": "AAAA;EACE;EACA;EACA;;AACA;EACA;EACA;EACA;EACA;;AACA;EACE;EACA;EACA;EACA;EACA;EACA;EACA;;AACA;EACE;;AAEF;EACE;EACA;;AAIJ;EACE;;AACA;EACE;EACA;EACA;EACA;EACA",
+  "file": "app.css"
+}

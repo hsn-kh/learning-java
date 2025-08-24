@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+    //関数
+    // function test1(){
+
+    //   return '関数1';
+    // }
+
+    // console.log(test1());
+
+    //変数・定数
+
+    // const test2 = function(){
+    //   return '関数2';
+    // }
+
+    // const test2 = () => {
+    //   return '関数2';
+    // }
+    
+    // console.log(test2());
+
+    // Promise 
+    // 1 状態(ok/ng)と値
+    // 2 Promiseチェーン
+
+    // callback
+    // 引数が状態 ok, ng (1つでも可)
+
+  //   function promiseTest1(){ //インプットなし
+  //     return new Promise( ok => {
+  //       //何かしら処理
+  //       ok('プロミス1です');
+  //     });
+  //   }
+
+  // console.log(promiseTest1());
+
+  // const promiseTest2 = new Promise( ok =>{
+  //   ok('プロミス2です');
+  // });
+  // console.log(promiseTest2);
+
+  // function testPromise3(input){
+  //   return new Promise(ok => {
+  //     //何かしら処理
+  //     ok(`プロミス${input}です`);
+  //   });
+  // }
+
+  // console.log(testPromise3('太郎')); 
+  
+  // Promiseチェーン
+  // Promise .then(ok_callback, ng_callback)
+  // Promise .then((ok_value) => {}, (ng_reason) => {})
+
+  // Promise .catch(ng_callback) //NGはcatch
+  // Promise .catch((ng_reason) => {}) //NGはcatch
+
+  //ng も追加 
+  // new Promise((ok, ng)=>{})
+  function promiseTest4(pay){
+    return new Promise( (ok, ng) => {
+      if(pay > 100){
+      let change = pay - 100;
+      ok(change);
+      }
+      ng('お金がたりません');
+    })
+  }
+
+  console.log(promiseTest4(80).catch( e =>{console.log(e)}));
+
+  promiseTest4(180).then( change1 =>{
+    console.log(change1);
+    return promiseTest4(change1);//Promiseでラップ ok(value)
+  }).then(change2 =>{
+    console.log(change2);
+  }).catch(e => console.log(e));
+
+  </script>  
+</body>
+</html>
