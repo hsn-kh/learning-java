@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+.include-3 {
+    color: green;
+}
+
+#sub-article {
+    color: red;
+}
+
+.selector-2 div div {
+    color: red;
+}
+
+.selector-3 ul li:nth-child(1) {
+    color: red;
+}

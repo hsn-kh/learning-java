@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CSS演習１</title>
+    <style>
+        .include-2 {
+            color: blue;
+        }
+    </style>
+</head>
+<body style="margin: 100px;">
+<header>
+    <h1>CSS演習１</h1>
+</header>
+<div>
+    <h2>CSSの書き方</h2>
+    <div class="include-1" style="color: red;">問１）style属性にCSSを記述し、フォントの色を赤色にしてください。</div>
+    <br>
+    <div class="include-2">問２）styleタグにCSSを記述し、フォントの色を青色にしてください。</div>
+    <br>
+    <div class="include-3">
+        問３）cssファイルにCSSを記述し、フォントの色を緑色にしてください。ファイル名はstyle.cssとしてください。
+    </div>
+    <br>
+</div>
+<br>
+<hr>
+<br>
+<div>
+    <h2>CSSセレクタ</h2>
+    <div class="selector-1">問１）赤色の罫線で囲われた範囲のフォントを赤色にしてください。
+        <div id="main-article" style="margin-left: 50px;">
+            <h3>見出し１</h3>
+            <p>説明文１です。</p>
+            <div id="sub-article" style="border: medium solid red;">
+                <h4>見出し１－１</h4>
+                <p>説明文１－１です。</p>
+                <p>説明文１－２です。</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="selector-2">問２）赤色の罫線で囲われた範囲のフォントを赤色にしてください。
+        <div style="margin-left: 50px;">
+            <h3>見出し１</h3>
+            <p>説明文１です。</p>
+            <div style="border: medium solid red;">
+                <h4>見出し１－１</h4>
+                <p>説明文１－１です。</p>
+                <p>説明文１－２です。</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="selector-3">問３）以下のリストのランキング１位のフォントを赤色にしてください。
+        <div style="margin-left: 50px;">
+            <h3>人気ランキング</h3>
+            <p>XXXの人気ランキングトップ５です。</p>
+            <ul>
+                <li>ランキング１位</li>
+                <li>ランキング２位</li>
+                <li>ランキング３位</li>
+                <li>ランキング４位</li>
+                <li>ランキング５位</li>
+            </ul>
+        </div>
+    </div>
+    <br>
+</div>
+<br>
+<br>
+</body>
+</html>

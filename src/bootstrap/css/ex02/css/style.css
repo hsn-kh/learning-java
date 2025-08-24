@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+.color-1 {
+    background-color: red;
+    color: white;
+}
+
+.color-2 {
+    background-color: rgba(237, 179, 128, 0.5);
+}
+
+.font-1 {
+    background-color: orange;
+    font-family: serif;
+    font-style: italic;
+}
+
+.font-2 {
+    background-color: orange;
+    font-family: 'Dela Gothic One', cursive;
+}
+
+.font-3 {
+    background-color: orange;
+    font-size: 150%;
+}
+
+.font-4 {
+    background-color: orange;
+    font-weight: bold;
+}
+
+.font-5 {
+    background-color: orange;
+    text-align: center;
+}
+
+.width-1 {
+    background-color: orange;
+    width: 500px;
+}
+
+.width-2 {
+    background-color: orange;
+    width: 75%;
+}
+
+.height-1 {
+    background-color: orange;
+    height: 100px;
+}
+
+.height-2 {
+    background-color: orange;
+    height: 10rem;
+}
